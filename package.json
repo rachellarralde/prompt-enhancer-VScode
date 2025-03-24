@@ -1,0 +1,66 @@
+{
+  "name": "prompt-enhancer",
+  "displayName": "Prompt Enhancer",
+  "description": "Enhance your AI prompts for better results",
+  "version": "1.0.0",
+  "publisher": "WitchCodes",
+  "icon": "PE_logo.png",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "prompt-enhancer.enhance",
+        "title": "Enhance AI Prompt"
+      }
+    ],
+    "configuration": {
+      "title": "Prompt Enhance",
+      "properties": {
+        "promptEnhancer.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your Groq API key for enhancing prompts"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js",
+    "watch": "nodemon --watch '*.js' --exec 'vscode-test-web --extensionDevelopmentPath=.'",
+    "vscode:prepublish": "webpack --mode production",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.80.0",
+    "@vscode/test-electron": "^2.3.4",
+    "eslint": "^8.47.0",
+    "glob": "^10.3.3",
+    "mocha": "^10.2.0",
+    "typescript": "^5.1.6",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1",
+    "groq-sdk": "^0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/prompt-enhancer.git"
+  }
+}
