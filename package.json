@@ -18,19 +18,31 @@
   "contributes": {
     "commands": [
       {
-        "command": "prompt-enhancer.enhance",
-        "title": "Enhance AI Prompt"
+        "command": "prompt-enhance.enhancePrompt",
+        "title": "Enhance AI Prompt",
+        "icon": "$(sparkle)"
       }
     ],
     "configuration": {
-      "title": "Prompt Enhance",
+      "title": "Prompt Enhancer",
       "properties": {
         "promptEnhancer.apiKey": {
           "type": "string",
           "default": "",
-          "description": "Your Groq API key for enhancing prompts"
+          "description": "Groq API Key for enhancing prompts"
         }
       }
+    },
+    "statusBar": {
+      "items": [
+        {
+          "id": "promptEnhancer.statusBar",
+          "alignment": "right",
+          "text": "$(sparkle)",
+          "tooltip": "Enhance AI Prompt",
+          "command": "prompt-enhance.enhancePrompt"
+        }
+      ]
     }
   },
   "scripts": {

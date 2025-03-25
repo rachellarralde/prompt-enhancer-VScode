@@ -1,5 +1,6 @@
 # Prompt Enhancer
 
+![Prompt Enhancer Logo](PE_Logo.png)
 Prompt Enhancer is a VS Code extension that helps you improve your AI prompts to get better, more accurate responses from AI coding assistants.
 
 ## Features
