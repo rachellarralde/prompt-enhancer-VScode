@@ -13,18 +13,32 @@ Prompt Enhancer is a VS Code extension that helps you improve your AI prompts to
 - **Preview Before Applying**: See the enhanced prompt before deciding to apply it
 - **Works Everywhere**: Enhances prompts in regular files, AI sidebars, or via direct input
 
+![Prompt Enhancer in action](images/prompt-enhancer-demo.gif)
+
 ## Requirements
 
 - VS Code 1.80.0 or higher
 - A Groq API key (free tier available)
 
+## Installation
+
+### Direct Installation (Recommended)
+1. Download the latest `.vsix` file from the [GitHub Releases](https://github.com/rachellarralde/prompt-enhancer-VScode/releases)
+2. In VS Code, go to Extensions view (Ctrl+Shift+X)
+3. Click the "..." at the top right of the Extensions panel
+4. Select "Install from VSIX..."
+5. Choose the downloaded `.vsix` file
+
+### Command Line Installation
+```code --install-extension prompt-enhancer-1.0.0.vsix
+```
+
 ## Setup
 
-1. Install the extension
-2. Get a free Groq API key at [console.groq.com](https://console.groq.com/signup) (takes less than 2 minutes)
-3. Open VS Code settings (File > Preferences > Settings)
-4. Search for "Prompt Enhance"
-5. Enter your Groq API key in the settings field
+1. Get a free Groq API key at [console.groq.com](https://console.groq.com/signup) (takes less than 2 minutes)
+2. Open VS Code settings (File > Preferences > Settings)
+3. Search for "Prompt Enhancer"
+4. Enter your Groq API key in the settings field
 
 ## How to Use
 
